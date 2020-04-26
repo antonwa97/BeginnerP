@@ -1,3 +1,7 @@
+#1.additional rule, where you can't move backwards.
+#2. 2 apples at a time
+#3. different field size
+
 import pygame
 import math
 import random
@@ -149,8 +153,8 @@ def redrawWindow(surface):
     pygame.display.update()
 
 
-def randomSnack(rows, item):
-    position = item.body
+def randomSnack(rows, item1):
+    position = item1.body
 
     while True:
         x = random.randrange(rows)
@@ -161,6 +165,7 @@ def randomSnack(rows, item):
             break
 
     return (x,y)
+
 
 
 def message_box(subject, content):
@@ -204,5 +209,8 @@ def main ():
 
     pass
 
-
 main()
+
+#1.additional rule, where you can't move backwards.
+#2. 2 apples at a time
+#3. different field size

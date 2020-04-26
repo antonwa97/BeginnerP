@@ -186,6 +186,7 @@ def main ():
     clock = pygame.time.Clock()
 
     while flag:
+
         pygame.time.delay(50)
         clock.tick(10)
         s.move()
@@ -198,11 +199,11 @@ def main ():
                 print('score: ', len(s.body))
                 message_box('looooser', 'play again')
                 s.reset((10,10))
+
                 break
 
         redrawWindow(win)
 
     pass
-
 
 main()
